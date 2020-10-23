@@ -24,7 +24,7 @@ def ttt():
     turn = 'X'
     num = 0
 #for loop to ask the player for input 9 times.
-    for i in range(9):
+    while num < 9:
         printboard(theboard)
         print("It's your turn " + turn + ". Where do you want to place?")
         try:
@@ -47,9 +47,11 @@ def ttt():
                     turn = "X"
                 continue
         except:
-            continue 
+            print("You made a mistake please us inputs, TL, TM, TR, ML, MM, MR, BL, BM, BR") 
+            continue
+
 #running game
-    ttt()
+ttt()
 
 
 
