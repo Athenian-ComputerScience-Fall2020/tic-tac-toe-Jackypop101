@@ -4,7 +4,17 @@
 Below are templates for flowcharts and mardown. feel free to edit them - or delete them and do something else if you prefer.
 
 # Markdown
+1) First I will create a dictionary with keys as TL, TM, TR, ML, MM, MR, BL, BM, BR. T means top, M means mid, B means bot, L means left, R means right. And the values for the keys are blank.
 
+2) Then I will create a print board function that prints out the value of each key which makes it easier to plug a place(for ex. TL) in and put down either X or O later on in the game function. here I will use the '|' and '-+-+-' as formatting for the board
+
+3) I will create function ttt as the acual game code.
+
+4) I will probably then use a for loop to ask the players 9 times total where to place their marks. 
+
+5) Using the print board function combined with the dictionary to print out the acual game board
+
+6) By asking for input from the user of where to place(for ex. TL) we can place either X or O into that slot. 
 
 ## Markdown
 This is a brief guide to Markdown. Click the edit button to see what to type and use the "Preview changes" tab to check your work as you go.
