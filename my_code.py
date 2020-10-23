@@ -24,27 +24,32 @@ def ttt():
     turn = 'X'
     num = 0
 #for loop to ask the player for input 9 times.
-    for i in range(10):
+    for i in range(9):
         printboard(theboard)
         print("It's your turn " + turn + ". Where do you want to place?")
-
-        move = input()        
+        try:
+            move = input()        
 #if the place on the board does not have anything already on it, it can be ocupied by turn, which is either X or O.
 # #Adding 1 to the count because the total can only be 9 because there are only 9 spaces. 
-        if theboard[move] == ' ':
-            theboard[move] = turn
-            num += 1
+            if theboard[move] == ' ':
+                theboard[move] = turn
+                num += 1
+                if turn == "X":
+                    turn = "O"
+                elif turn == "O":
+                    turn = "X"
 #If there is already something on that space the system is going to tell the user to move it's piece elsewhere. 
-        elif theboard[move] != ' ':
-            print("Space is taken, move elsewhere.")
-            continue
-#Switching tunrs from X to O and from O to X
-        if turn == "X":
-            turn = "O"
-        if turn == "O":
-            turn = "X"
+            elif theboard[move] != ' ':
+                print("Space is taken, move elsewhere.")
+                if turn == "X":
+                    turn = "O"
+                elif turn == "O":
+                    turn = "X"
+                continue
+        except:
+            continue 
 #running game
-ttt()
+    ttt()
 
 
 

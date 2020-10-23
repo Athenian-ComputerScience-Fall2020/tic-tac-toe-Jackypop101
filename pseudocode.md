@@ -12,9 +12,13 @@ Below are templates for flowcharts and mardown. feel free to edit them - or dele
 
 4) I will probably then use a for loop to ask the players 9 times total where to place their marks. 
 
-5) Using the print board function combined with the dictionary to print out the acual game board
+5) Using the print board function combined with the dictionary to print out the acual game board everytime before the program ask the user for their input
 
 6) By asking for input from the user of where to place(for ex. TL) we can place either X or O into that slot. 
+
+7) If the slot if already something on that slot, it will ask the user to move their piece elsewhere.
+
+8)
 
 ## Markdown
 This is a brief guide to Markdown. Click the edit button to see what to type and use the "Preview changes" tab to check your work as you go.
