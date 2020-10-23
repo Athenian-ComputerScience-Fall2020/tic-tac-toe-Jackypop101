@@ -24,7 +24,7 @@ def ttt():
     turn = 'X'
     num = 0
 #for loop to ask the player for input 9 times.
-    while num < 9:
+    while num < 10:
         printboard(theboard)
         print("It's your turn " + turn + ". Where do you want to place?")
         try:
@@ -46,6 +46,63 @@ def ttt():
                 elif turn == "O":
                     turn = "X"
                 continue
+            if num < 10:
+                #left column
+                if theboard['BL'] == theboard['ML'] == theboard['TL'] == 'X':
+                    print("X" + " Won!!!")
+                    break
+                elif theboard['BL'] and theboard['ML'] and theboard['TL'] == 'O':
+                    print("O" + " Won!!!")
+                    break
+                #middle column
+                elif theboard['BM'] and theboard['MM'] and theboard['TM'] == 'X':
+                    print("X" + " Won!!!")
+                    break
+                elif theboard['BM'] and theboard['MM'] and theboard['TM'] == 'O':
+                #right column
+                    print("O" + " Won!!!")
+                    break
+                elif theboard['BR'] and theboard['MR'] and theboard['TR'] == 'X':
+                    print("X" + " Won!!!")
+                    break
+                elif theboard['BR'] and theboard['MR'] and theboard['TR'] == 'O':
+                    print("O" + " Won!!!")
+                    break
+                #top row
+                elif theboard['TL'] and theboard['TM'] and theboard['TR'] == 'X':
+                    print("X" + " Won!!!")
+                    break
+                elif theboard['TL'] and theboard['TM'] and theboard['TR'] == 'O':
+                    print("O" + " Won!!!")
+                    break
+                #mid row
+                elif theboard['ML'] and theboard['MM'] and theboard['MR'] == 'X':
+                    print("X" + " Won!!!")
+                    break
+                elif theboard['ML'] and theboard['MM'] and theboard['MR'] == 'O':
+                    print("O" + " Won!!!")
+                    break
+                #bot row
+                elif theboard['BL'] and theboard['BM'] and theboard['BR'] == 'X':
+                    print("X" + " Won!!!")
+                    break
+                elif theboard['BL'] and theboard['BM'] and theboard['BR'] == 'O':
+                    print("O" + " Won!!!")
+                    break
+                #left diagonal 
+                elif theboard['TL'] and theboard['MM'] and theboard['BR'] == 'X':
+                    print("X" + " Won!!!")
+                    break
+                elif theboard['TL'] and theboard['MM'] and theboard['BR'] == 'O':
+                    print("O" + " Won!!!")
+                    break
+                #right diagonal
+                elif theboard['BL'] and theboard['MM'] and theboard['TR'] == 'X':
+                    print("X" + " Won!!!")
+                    break
+                elif theboard['BL'] and theboard['MM'] and theboard['TR'] == 'O':
+                    print("O" + " Won!!!")
+                    break
         except:
             print("You made a mistake please us inputs, TL, TM, TR, ML, MM, MR, BL, BM, BR") 
             continue
