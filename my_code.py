@@ -46,69 +46,88 @@ def ttt():
                 elif turn == "O":
                     turn = "X"
                 continue
-            if num < 10:
+            if num < 9:
                 #left column
                 if theboard['BL'] == theboard['ML'] == theboard['TL'] == 'X':
                     print("X" + " Won!!!")
                     break
-                elif theboard['BL'] and theboard['ML'] and theboard['TL'] == 'O':
+                elif theboard['BL'] == theboard['ML'] == theboard['TL'] == 'O':
                     print("O" + " Won!!!")
                     break
                 #middle column
-                elif theboard['BM'] and theboard['MM'] and theboard['TM'] == 'X':
+                elif theboard['BM'] == theboard['MM'] == theboard['TM'] == 'X':
                     print("X" + " Won!!!")
                     break
-                elif theboard['BM'] and theboard['MM'] and theboard['TM'] == 'O':
+                elif theboard['BM'] == theboard['MM'] == theboard['TM'] == 'O':
                 #right column
                     print("O" + " Won!!!")
                     break
-                elif theboard['BR'] and theboard['MR'] and theboard['TR'] == 'X':
+                elif theboard['BR'] == theboard['MR'] == theboard['TR'] == 'X':
                     print("X" + " Won!!!")
                     break
-                elif theboard['BR'] and theboard['MR'] and theboard['TR'] == 'O':
+                elif theboard['BR'] == theboard['MR'] == theboard['TR'] == 'O':
                     print("O" + " Won!!!")
                     break
                 #top row
-                elif theboard['TL'] and theboard['TM'] and theboard['TR'] == 'X':
+                elif theboard['TL'] == theboard['TM'] == theboard['TR'] == 'X':
                     print("X" + " Won!!!")
                     break
-                elif theboard['TL'] and theboard['TM'] and theboard['TR'] == 'O':
+                elif theboard['TL'] == theboard['TM'] == theboard['TR'] == 'O':
                     print("O" + " Won!!!")
                     break
                 #mid row
-                elif theboard['ML'] and theboard['MM'] and theboard['MR'] == 'X':
+                elif theboard['ML'] == theboard['MM'] == theboard['MR'] == 'X':
                     print("X" + " Won!!!")
                     break
-                elif theboard['ML'] and theboard['MM'] and theboard['MR'] == 'O':
+                elif theboard['ML'] == theboard['MM'] == theboard['MR'] == 'O':
                     print("O" + " Won!!!")
                     break
                 #bot row
-                elif theboard['BL'] and theboard['BM'] and theboard['BR'] == 'X':
+                elif theboard['BL'] == theboard['BM'] == theboard['BR'] == 'X':
                     print("X" + " Won!!!")
                     break
-                elif theboard['BL'] and theboard['BM'] and theboard['BR'] == 'O':
+                elif theboard['BL'] == theboard['BM'] == theboard['BR'] == 'O':
                     print("O" + " Won!!!")
                     break
                 #left diagonal 
-                elif theboard['TL'] and theboard['MM'] and theboard['BR'] == 'X':
+                elif theboard['TL'] == theboard['MM'] == theboard['BR'] == 'X':
                     print("X" + " Won!!!")
                     break
-                elif theboard['TL'] and theboard['MM'] and theboard['BR'] == 'O':
+                elif theboard['TL'] == theboard['MM'] == theboard['BR'] == 'O':
                     print("O" + " Won!!!")
                     break
                 #right diagonal
-                elif theboard['BL'] and theboard['MM'] and theboard['TR'] == 'X':
+                elif theboard['BL'] == theboard['MM'] == theboard['TR'] == 'X':
                     print("X" + " Won!!!")
                     break
-                elif theboard['BL'] and theboard['MM'] and theboard['TR'] == 'O':
+                elif theboard['BL'] == theboard['MM'] == theboard['TR'] == 'O':
                     print("O" + " Won!!!")
                     break
+            if num == 9:
+                print("Tie Game!!!")
+                break
+        
         except:
             print("You made a mistake please us inputs, TL, TM, TR, ML, MM, MR, BL, BM, BR") 
             continue
+        a = input('Would you like to restart? Enter Y to play, Enter N to quit.')
+        if a == "Y":
+            theboard['TL'] = ' '
+            theboard['ML'] = ' '
+            theboard['BL'] = ' '
+            theboard['TM'] = ' '
+            theboard['MM'] = ' '
+            theboard['BM'] = ' '
+            theboard['TR'] = ' '
+            theboard['TR'] = ' '
+            theboard['TR'] = ' '
+        if a == "N":
+            break
+            
 
 #running game
 ttt()
+
 
 
 
