@@ -122,6 +122,7 @@ def ttt():
                     break
             # If no one won after 9 round which means that the whole board is filled, then the game would be a tie.
             if num == 9:
+                printboard(theboard)
                 print("Tie Game!!!")
                 break
         #Giving the player a chance to redo their input if they entered a wrong input.
