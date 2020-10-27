@@ -14,11 +14,15 @@ Below are templates for flowcharts and mardown. feel free to edit them - or dele
 
 5) Using the print board function combined with the dictionary to print out the acual game board everytime before the program ask the user for their input
 
-6) By asking for input from the user of where to place(for ex. TL) we can place either X or O into that slot. 
+6) By asking for input from the user of where to place(for ex. TL) we can place either X or O into that slot. I will also use a try and except function to allow the player to redo their input if they typed it wrong.
 
 7) If the slot if already something on that slot, it will ask the user to move their piece elsewhere.
 
-8)
+8) I will make a system using a lot of if statements checking if there is 3 of X or O in a row. When there is, it will print the winning side (X or O) won the game.
+
+9) I will also check after 9 round meaning the board is full whether it is a tie or not.
+
+10) Lastly, I will make a function that ask the players if they would like to play again after they either tied or won. 
 
 ## Markdown
 This is a brief guide to Markdown. Click the edit button to see what to type and use the "Preview changes" tab to check your work as you go.
