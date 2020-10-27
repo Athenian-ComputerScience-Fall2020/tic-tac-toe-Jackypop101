@@ -131,7 +131,7 @@ def ttt():
             
 print("Hello players, this is a simple and fun game called:")
 print("TICK!")
-print("TACK!")
+print("TAC!")
 print('TOE!')
 print("*****")
 print("This is a 2 player game, the starting player is X and the second player is O. Both players will take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row first is the winner. By the end of 9 rounds meaning that if all the squares are full, it is a tie.")
