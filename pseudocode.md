@@ -4,25 +4,27 @@
 Below are templates for flowcharts and mardown. feel free to edit them - or delete them and do something else if you prefer.
 
 # Markdown
-1) First I will create a dictionary with keys as TL, TM, TR, ML, MM, MR, BL, BM, BR. T means top, M means mid, B means bot, L means left, R means right. And the values for the keys are blank.
+1) First I will print out the directions of how to play the game.
 
-2) Then I will create a print board function that prints out the value of each key which makes it easier to plug a place(for ex. TL) in and put down either X or O later on in the game function. here I will use the '|' and '-+-+-' as formatting for the board
+2) I will create a dictionary with keys as TL, TM, TR, ML, MM, MR, BL, BM, BR. T means top, M means mid, B means bot, L means left, R means right. And the values for the keys are blank.
 
-3) I will create function ttt as the acual game code.
+3) Then I will create a print board function that prints out the value of each key which makes it easier to plug a place(for ex. TL) in and put down either X or O later on in the game function. here I will use the '|' and '-+-+-' as formatting for the board
 
-4) I will probably then use a for loop to ask the players 9 times total where to place their marks. 
+4) I will create function ttt as the acual game code that I will run.
 
-5) Using the print board function combined with the dictionary to print out the acual game board everytime before the program ask the user for their input
+5) I will probably then use a for loop to ask the players 9 times total where to place their marks. I will also use a try and except function to allow the player to redo their input if they typed it wrong.
 
-6) By asking for input from the user of where to place(for ex. TL) we can place either X or O into that slot. I will also use a try and except function to allow the player to redo their input if they typed it wrong.
+6) Using the print board function combined with the dictionary to print out the acual game board everytime before the program ask the user for their input
 
-7) If the slot if already something on that slot, it will ask the user to move their piece elsewhere.
+7) By asking for input from the user of where to place(for ex. TL) we can place either X or O into that slot. 
 
-8) I will make a system using a lot of if statements checking if there is 3 of X or O in a row. When there is, it will print the winning side (X or O) won the game.
+8) If the slot if already something on that slot, it will ask the user to move their piece elsewhere.
 
-9) I will also check after 9 round meaning the board is full whether it is a tie or not.
+9) I will make a system using a lot of if statements checking if there is 3 of X or O in a row. When there is, it will print the winning side (X or O) won the game.
 
-10) Lastly, I will make a function that ask the players if they would like to play again after they either tied or won. 
+10) I will also check after 9 round meaning the board is full whether it is a tie or not.
+
+11) Lastly, I will make a function that ask the players if they would like to play again after they either tied or won. 
 
 ## Markdown
 This is a brief guide to Markdown. Click the edit button to see what to type and use the "Preview changes" tab to check your work as you go.

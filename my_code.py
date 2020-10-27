@@ -46,6 +46,7 @@ def ttt():
                 elif turn == "O":
                     turn = "X"
                 continue
+#Cheking system: To check every row and colum and diagonal rows to see if all three are the same. Either X or O.
             if num < 9:
                 #left column
                 if theboard['BL'] == theboard['ML'] == theboard['TL'] == 'X':
@@ -128,11 +129,18 @@ def ttt():
             print("You made a mistake please us inputs, TL, TM, TR, ML, MM, MR, BL, BM, BR") 
             continue
             
+print("Hello players, this is a simple and fun game called:")
+print("TICK!")
+print("TACK!")
+print('TOE!')
+print("*****")
+print("This is a 2 player game, the starting player is X and the second player is O. Both players will take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row first is the winner. By the end of 9 rounds meaning that if all the squares are full, it is a tie.")
+print("Good luck players and let the game begin!")
 
 #running game
 ttt()
 
-#Asking the players if they whould like to play again after they either won or tied.
+#Asking the players if they whould like to play or quit again after they either won or tied.
 while True:
     a = input('Would you like to restart? Enter Y to play, Enter N to quit.')
     if a == "Y":
