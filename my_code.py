@@ -156,6 +156,7 @@ while True:
         theboard['BR'] = ' '
         ttt()
 
+
     if a == "N":
         print("Hope you can play again soon!")
 
